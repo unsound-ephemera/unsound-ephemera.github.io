@@ -7345,8 +7345,31 @@ a:hover {
   overflow: hidden;
   background: #fff;
 }
+.menu .mobile-menu {
+  padding: 0px 30px 40px 30px;
+}
+.menu select {
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+  font-size: 13px;
+  display: inline-block;
+  color: #222;
+  vertical-align: top;
+  padding: 2px;
+  padding: initial;
+  border: 1px solid #ccc;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+}
 .menu ul {
   padding: 25px 0px 25px 95px;
+}
+@media (max-width: 767px) {
+  .menu ul {
+    padding: 30px 90px;
+  }
 }
 .menu li {
   display: table-cell;
@@ -7371,6 +7394,16 @@ a:hover {
   font-weight: 400;
   color: #1e1e1e;
 }
+@media (max-width: 1199px) {
+  .menu li a {
+    padding: 0px 15px;
+  }
+}
+@media (max-width: 767px) {
+  .menu li a {
+    padding: 0px 10px;
+  }
+}
 .menu li a:hover {
   color: #a0a0a0;
 }
@@ -7378,14 +7411,30 @@ a:hover {
   width: 180px;
   padding-right: 10px;
 }
+@media (max-width: 767px) {
+  .menu li.e-logo {
+    width: inherit;
+    padding-right: 0px;
+  }
+}
 .menu li a.a-logo {
   display: block;
   padding: 0px;
   margin-left: 0px;
   width: 170px;
 }
+@media (max-width: 767px) {
+  .menu li a.a-logo {
+    width: inherit;
+  }
+}
 .content {
   padding: 60px 80px;
+}
+@media (max-width: 767px) {
+  .content {
+    padding: 40px 20px;
+  }
 }
 .content .text {
   background: #fff;

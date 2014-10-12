@@ -26,39 +26,50 @@
         <div id="z" class="site">
 
           <div class="row ">
-          <div class="col-lg-12 col-md-12 col-sm-12 menu ">
+            <div class="col-lg-12 col-md-12 col-sm-12 menu ">
 
-            <ul>
-                  <li class="e-logo">
-                    <a href="/" class="a-logo">
-                      <img src="/assets/img/logo-340.png"  class="img-responsive" />
-                    </a>
-                    
-                  </li>
-                  <li>
-                    <a href="/about.html">About</a>
-                  </li>
-                  <li>
-                    <a href="/installation.html">Installation</a>
-                  </li>
-                  <li>
-                    <a href="/perfume.html">Perfume</a>
-                  </li>
-                  <li>
-                    <a href="/sound.html">Sound & Videos</a>
-                  </li>
-                  <li>
-                    <a href="/contact.html">Contact</a>
-                  </li>
+              <ul >
+                    <li class="e-logo">
+                      <a href="/" class="a-logo">
+                        <img src="/assets/img/logo-340.png"  class="img-responsive" />
+                      </a>
+                      
+                    </li>
+                    <li class="hidden-xs">
+                      <a href="/about.html">About</a>
+                    </li>
+                    <li class="hidden-xs">
+                      <a href="/installation.html">Installation</a>
+                    </li>
+                    <li class="hidden-xs">
+                      <a href="/perfume.html">Perfume</a>
+                    </li>
+                    <li class="hidden-xs">
+                      <a href="/sound.html">Sound & Videos</a>
+                    </li>
+                    <li class="hidden-xs">
+                      <a href="/contact.html">Contact</a>
+                    </li>
 
-                  <li>
-                    <a href="https://ephemera-by-unsound.myshopify.com/">Shop</a>
-                  </li>
-            </ul>
+                    <li class="hidden-xs">
+                      <a href="https://ephemera-by-unsound.myshopify.com/">Shop</a>
+                    </li>
+              </ul>
 
-            
+              <div class="mobile-menu hidden-lg hidden-md hidden-sm">
+                <select id="dynamic_select"  class="">
+                  <option value="/">Ephemera</option>
+                  <option value="/about.html">About</option>
+                  <option value="/installation.html">Installation</option>
+                  <option value="/perfume.html">Perfume</option>
+                  <option value="/sound.html">Sound & Videos</option>
+                  <option value="/contact.html">Contact</option>
+                  <option value="https://ephemera-by-unsound.myshopify.com/">Shop</option>
+                </select>
+              </div>
+              
 
-          </div>
+            </div>
           </div>
        
           <div class="content">
@@ -67,6 +78,17 @@
           </div>
         
         </div>
-
+<script>
+    $(function(){
+      // bind change event to select
+      $('#dynamic_select').bind('change', function () {
+          var url = $(this).val(); // get selected value
+          if (url) { // require a URL
+              window.location = url; // redirect
+          }
+          return false;
+      });
+    });
+</script>
     </body>
 </html>
