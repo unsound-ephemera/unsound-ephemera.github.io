@@ -87,11 +87,31 @@ a:hover {
 }
 
 .menu {
+
+	.mobile-menu {padding:0px 30px 40px 30px;}
+
+	select {
+		height: 30px;
+		line-height: 30px;
+		width: 100%;
+		font-size: 13px;
+		display: inline-block;
+		color: #222;
+		vertical-align: top;
+		padding: 2px;
+		padding: initial;
+		border: 1px solid #ccc;
+		-moz-border-radius: 1px;
+		-webkit-border-radius: 1px;
+		border-radius: 1px;
+		}
 	
 	overflow: hidden;
 	background: #fff;
 	ul {
 		padding: 25px 0px 25px 95px; 
+		@media (max-width: @screen-xs-max) { padding: 30px 90px; };
+		
 	}
 	
 	li {display: table-cell;
@@ -102,6 +122,8 @@ a:hover {
 			
 			
 			padding: 0px 20px;
+			@media (max-width: @screen-md-max) { padding: 0px 15px; };
+			@media (max-width: @screen-xs-max) { padding: 0px 10px; };
 			margin-left: 10px;
 			text-transform: uppercase;
 			.transition;
@@ -119,6 +141,7 @@ a:hover {
 			&.e-logo {
 			width: 180px;
 			padding-right: 10px;
+			@media (max-width: @screen-xs-max) { width: inherit;	padding-right: 0px;};
 			}
 
 			a.a-logo {
@@ -126,6 +149,7 @@ a:hover {
 			padding: 0px;
 			margin-left: 0px;
 			width: 170px;
+			@media (max-width: @screen-xs-max) { width: inherit;};
 			}
 
 
@@ -137,6 +161,7 @@ a:hover {
 .content {
 
 	padding: 60px 80px;
+	@media (max-width: @screen-xs-max) { padding: 40px 20px;};
 
 	.text {
 
@@ -282,4 +307,8 @@ h6.authors {
 
 .kode {
 	font-family: 'Quicksand', sans-serif;
+}
+
+.perf {
+	margin-bottom: 20px;
 }
