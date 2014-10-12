@@ -1,0 +1,54 @@
+---
+layout: default
+---
+<div class="col-lg-4 col-md-4 col-sm-4 ">
+              
+              
+                  {% for post in site.posts %}
+                    {% if post.title == 'bass' %}
+                      <img src="/assets/img/{{ post.img }}" class="img-responsive"/>
+                        <div class="text">
+                          <h4>{{ post.title }}</h4>
+                          {{ post.content }}
+                        </div>
+                      {% endif %}
+                    {% endfor %}
+              
+              
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-4 ">
+              
+              
+                  {% for post in site.posts %}
+                    {% if post.title == 'drone' %}
+                      <img src="/assets/img/{{ post.img }}" class="img-responsive"/>
+                        <div class="text">
+                          <h4>{{ post.title }}</h4>
+                          {{ post.content }}
+                        </div>
+                      {% endif %}
+                    {% endfor %}
+              
+              
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-4 ">
+              
+              
+                  {% for post in site.posts %}
+                    {% if post.title == 'noise' %}
+                      <img src="/assets/img/{{ post.img }}" class="img-responsive"/>
+                        <div class="text">
+                          <h4>{{ post.title }}</h4>
+                          {{ post.content }}
+                        </div>
+                      {% endif %}
+                    {% endfor %}
+              
+              
+</div>
+
+
+
+

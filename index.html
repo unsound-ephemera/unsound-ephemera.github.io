@@ -3,11 +3,59 @@ layout: default
 title: Ephemera
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+
+<div class="col-lg-8 col-md-8 col-sm-7 ">
+                <div id="myCarousel" class="carousel slide">
+ 
+      <!-- Carousel items -->
+      <div class="carousel-inner">
+        <div class="active item"><img src="/assets/img/slide-1.jpg" class="img-responsive"/></div>
+        <div class="item"><img src="/assets/img/slide-4.jpg" class="img-responsive"/></div>
+        <div class="item"><img src="/assets/img/slide-7.jpg" class="img-responsive"/></div>
+        <div class="item"><img src="/assets/img/slide-3.jpg" class="img-responsive"/></div>
+        <div class="item"><img src="/assets/img/slide-9.jpg" class="img-responsive"/></div>
+        <div class="item"><img src="/assets/img/slide-13.jpg" class="img-responsive"/></div>
+        <div class="item"><img src="/assets/img/slide-8.jpg" class="img-responsive"/></div>
+      </div>
+  
+  </div>
 </div>
+
+
+<div class="col-lg-4 col-md-4 col-sm-3 ">
+              
+              <div class="text">
+                
+                      <h4>Ephemera</h4>
+                 <p>Bringing together scent and sound, Ephemera presents olfactory compositions based on musical resonances and reverberations.</p>
+                 
+              </div>
+              
+</div>
+          
+
+<script type='text/javascript'>
+    $(document).ready(function() {
+         $('.carousel').carousel({
+             interval: 2000
+         })
+    });    
+</script>
+        <!-- <script type="text/javascript">
+
+         var video = [
+			    '/assets/vid/kode9.mp4',
+			    '/assets/vid/ben.mp4',
+			    '/assets/vid/tim.mp4'
+			];
+
+      		var rand = video[Math.floor(Math.random() * video.length)];
+
+                $(function() {
+      			    var BV = new $.BigVideo();
+      			    BV.init();
+      			    BV.show(rand, {ambient:true});
+      			});
+    
+        </script> 
+        -->
