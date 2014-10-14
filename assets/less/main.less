@@ -88,12 +88,15 @@ a:hover {
 
 .menu {
 
-	.mobile-menu {padding:0px 30px 40px 30px;}
+	.mobile-menu {padding:0px 74px 40px 30px;
+					@media (max-width: @screen-xs-max) { padding: 0px 30px 40px 30px; };}
 
 	select {
 		height: 30px;
 		line-height: 30px;
 		width: 100%;
+		@media (max-width: @screen-sm-max) { width: 40%; float: right; };
+		@media (max-width: @screen-xs-max) { width: 100%; float: none; };
 		font-size: 13px;
 		display: inline-block;
 		color: #222;
@@ -142,9 +145,9 @@ a:hover {
 		
 			&.e-logo {
 			width: 180px;
-			@media (max-width: @screen-sm-max) { width: 140px; };
+			@media (max-width: @screen-sm-max) { float:left; margin-right: 40px };
 			padding-right: 10px;
-			@media (max-width: @screen-xs-max) { width: inherit;	padding-right: 0px;};
+			@media (max-width: @screen-xs-max) { width: inherit;	float:none;  margin-right:0px; padding-right: 0px;};
 			}
 
 			a.a-logo {
@@ -152,8 +155,7 @@ a:hover {
 			padding: 0px;
 			margin-left: 0px;
 			width: 170px;
-			@media (max-width: @screen-md-max) { width: 170px; };
-			@media (max-width: @screen-sm-max) { width: 130px; };
+			
 			@media (max-width: @screen-xs-max) { width: inherit;};
 			}
 
