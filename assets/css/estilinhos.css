@@ -7366,6 +7366,11 @@ a:hover {
 .menu ul {
   padding: 25px 0px 25px 95px;
 }
+@media (max-width: 991px) {
+  .menu ul {
+    padding: 30px 60px;
+  }
+}
 @media (max-width: 767px) {
   .menu ul {
     padding: 30px 90px;
@@ -7396,7 +7401,7 @@ a:hover {
 }
 @media (max-width: 1199px) {
   .menu li a {
-    padding: 0px 15px;
+    padding: 0px 10px;
   }
 }
 @media (max-width: 767px) {
@@ -7411,6 +7416,11 @@ a:hover {
   width: 180px;
   padding-right: 10px;
 }
+@media (max-width: 991px) {
+  .menu li.e-logo {
+    width: 140px;
+  }
+}
 @media (max-width: 767px) {
   .menu li.e-logo {
     width: inherit;
@@ -7423,6 +7433,16 @@ a:hover {
   margin-left: 0px;
   width: 170px;
 }
+@media (max-width: 1199px) {
+  .menu li a.a-logo {
+    width: 170px;
+  }
+}
+@media (max-width: 991px) {
+  .menu li a.a-logo {
+    width: 130px;
+  }
+}
 @media (max-width: 767px) {
   .menu li a.a-logo {
     width: inherit;
@@ -7430,6 +7450,11 @@ a:hover {
 }
 .content {
   padding: 60px 80px;
+}
+@media (max-width: 991px) {
+  .content {
+    padding: 60px 60px;
+  }
 }
 @media (max-width: 767px) {
   .content {
@@ -7575,4 +7600,83 @@ h6.authors {
 }
 .perf {
   margin-bottom: 20px;
+}
+.footer {
+  padding: 60px 80px;
+  margin-top: 0px;
+}
+@media (max-width: 991px) {
+  .footer {
+    padding: 60px 60px;
+  }
+}
+#mc_embed_signup {
+  background: transparent;
+  clear: none;
+  font: 11px 'Raleway', Helvetica, Arial, sans-serif;
+  width: 100%;
+  text-transform: uppercase;
+}
+#mc_embed_signup form {
+  display: block;
+  position: relative;
+  text-align: center;
+  padding: 0px;
+}
+#mc_embed_signup input {
+  border: 0px solid #999;
+  background: rgba(255, 255, 255, 0.5);
+  height: 32px;
+  line-height: 32px;
+}
+#mc_embed_signup input.button {
+  display: block;
+  width: 100%;
+  margin: 0 0 0px 0;
+  min-width: 90px;
+}
+@media (max-width: 1199px) {
+  #mc_embed_signup input.button {
+    width: 108%;
+  }
+}
+@media (max-width: 991px) {
+  #mc_embed_signup input.button {
+    width: 100%;
+  }
+}
+#mc_embed_signup .button {
+  clear: both;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 0 none;
+  border-radius: 0px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  height: 32px;
+  line-height: 32px;
+  margin: 0 5px 10px 0;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: auto;
+  float: left;
+}
+#mc_embed_signup input.email {
+  display: block;
+  padding: 8px 0;
+  margin: 0 0% 10px 0;
+  text-indent: 5px;
+  width: 100%;
+  min-width: 130px;
+  text-align: center;
+}
+.logo-un {
+  padding-right: 60px;
 }
