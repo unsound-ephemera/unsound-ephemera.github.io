@@ -7346,7 +7346,12 @@ a:hover {
   background: #fff;
 }
 .menu .mobile-menu {
-  padding: 0px 30px 40px 30px;
+  padding: 0px 74px 40px 30px;
+}
+@media (max-width: 767px) {
+  .menu .mobile-menu {
+    padding: 0px 30px 40px 30px;
+  }
 }
 .menu select {
   height: 30px;
@@ -7362,6 +7367,18 @@ a:hover {
   -moz-border-radius: 1px;
   -webkit-border-radius: 1px;
   border-radius: 1px;
+}
+@media (max-width: 991px) {
+  .menu select {
+    width: 40%;
+    float: right;
+  }
+}
+@media (max-width: 767px) {
+  .menu select {
+    width: 100%;
+    float: none;
+  }
 }
 .menu ul {
   padding: 25px 0px 25px 95px;
@@ -7418,12 +7435,15 @@ a:hover {
 }
 @media (max-width: 991px) {
   .menu li.e-logo {
-    width: 140px;
+    float: left;
+    margin-right: 40px;
   }
 }
 @media (max-width: 767px) {
   .menu li.e-logo {
     width: inherit;
+    float: none;
+    margin-right: 0px;
     padding-right: 0px;
   }
 }
@@ -7432,16 +7452,6 @@ a:hover {
   padding: 0px;
   margin-left: 0px;
   width: 170px;
-}
-@media (max-width: 1199px) {
-  .menu li a.a-logo {
-    width: 170px;
-  }
-}
-@media (max-width: 991px) {
-  .menu li a.a-logo {
-    width: 130px;
-  }
 }
 @media (max-width: 767px) {
   .menu li a.a-logo {
