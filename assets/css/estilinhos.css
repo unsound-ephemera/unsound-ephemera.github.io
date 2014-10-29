@@ -7490,6 +7490,10 @@ a:hover {
   letter-spacing: 2px;
   font-weight: 400;
 }
+.content h6 {
+  margin-top: 30px;
+  text-transform: uppercase;
+}
 .content a.shop-btn {
   background: #f0f0f0;
   padding: 25px;
@@ -7689,4 +7693,15 @@ h6.authors {
 }
 .logo-un {
   padding-right: 60px;
+}
+a.policies {
+  font-size: 10px;
+  display: block;
+  padding: 10px 0px;
+  background: rgba(60, 60, 60, 0.1);
+  color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+}
+a.policies:hover {
+  background: rgba(60, 60, 60, 0.4);
 }
