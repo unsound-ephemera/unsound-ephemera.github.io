@@ -28,4 +28,6 @@ From 23 - 26 October, Ephemera will travel to the Tromsø Center For Contemporar
 * **Video** Marcel Weber (MFO)
 * **Prints** Manuel Sepulveda (Optigram)
 
-Thanks to the Rolex Institute for their support.
+Thanks to the Rolex Institute for their support.   
+
+Thanks also to Air Aroma.
