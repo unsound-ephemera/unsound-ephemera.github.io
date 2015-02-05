@@ -7702,3 +7702,21 @@ a.policies {
 a.policies:hover {
   background: rgba(60, 60, 60, 0.4);
 }
+.social {
+  margin: 0px 10px 10px 0px;
+  float: right;
+}
+.social a {
+  display: block;
+  width: 25px;
+  float: left;
+  margin-right: 5px;
+}
+.social a:hover img {
+  -moz-opacity: 0.45;
+  -khtml-opacity: 0.45;
+  -webkit-opacity: 0.45;
+  opacity: 0.45;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=45);
+  filter: alpha(opacity=45);
+}
