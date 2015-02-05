@@ -7242,9 +7242,6 @@ body.vjs-full-window {
 .vjs-no-js a:visited {
   color: #F4A460;
 }
-/* -----------------------------------------------------------------------------
-The original source of this file lives at
-https://github.com/videojs/video.js/blob/master/src/css/video-js.less */
 /*---------------------------------------------------
     LESS Elements 0.9
   ---------------------------------------------------
@@ -7399,7 +7396,7 @@ a:hover {
   text-align: center;
 }
 .menu li a {
-  padding: 0px 20px;
+  padding: 0px 15px;
   margin-left: 10px;
   text-transform: uppercase;
   /* transition */
