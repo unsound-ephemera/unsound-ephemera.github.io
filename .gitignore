@@ -1,2 +1,6 @@
 _site
 *.codekit
+
+Gemfile
+
+Gemfile.lock
